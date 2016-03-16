@@ -1,9 +1,12 @@
 {
   "manifest_version": 2,
   "name": "beautify-me",
-  "version": "0.1",
+  "version": "0.2",
   "content_scripts":[{
-      "css": ["bootstrap.css"],
+  	  "js": ["popup.js", "jquery-1.11.2.js"],
       "matches": ["<all_urls>"]
-    }]
+    }],
+    "browser_action": {
+    	"default_popup": "popup.html"
+    }
 }
