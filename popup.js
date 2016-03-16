@@ -1,9 +1,12 @@
-
 $(document).ready(function(){
 	$('#inject-css').on('click', function(){
 		console.log('clicked');
-		var path = chrome.extension.getURL('bootstrap.css');
-		$('head').append('<link rel="stylesheet" href=' + 'path' + '>');
-		console.log(path);
+		chrome.tabs.query({
+			"currentWindow": true,
+			"active": true
+		}, function(tabs){
+			chrome.tabs.insertCSS(tabs[0],'bootstrap.css');
+			console.log('from inside the callback of insertCSS');
+		})
 	});
 })
