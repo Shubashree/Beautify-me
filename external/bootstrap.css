@@ -5788,6 +5788,7 @@ div {
   font-weight: 150;
   line-height: 1.4;
 }
+
 span {
   margin: 0 0 10px;
   margin-bottom: 20px;
@@ -5795,22 +5796,26 @@ span {
   font-weight: 150;
   line-height: 1.4;
 }
+
 p {
   margin: 0 0 10px;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 16px !important;
   font-weight: 150;
   line-height: 1.4;
 }
-li, span a {
-  margin: 0 0 10px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  font-weight: 70;
-}
+
 .title a{
   margin: 0 0 10px;
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 70;
-  }
+}
+
+tr, td {
+  margin: 0 0 10px;
+  margin-bottom: 20px;
+  font-size: 16px !important;
+  font-weight: 150;
+  line-height: 1.4;
+}
