@@ -5812,7 +5812,7 @@ p {
   font-weight: 70;
 }
 
-tr, td {
+td, th, li {
   margin: 0 0 10px;
   margin-bottom: 20px;
   font-size: 16px !important;

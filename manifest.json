@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "beautify-me",
-  "version": "0.6",
+  "name": "Beautify-me",
+  "version": "0.7",
   "browser_action": {
   		"default_icon": "Beautify.png",
     	"default_popup": "popup.html"
